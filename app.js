@@ -65,6 +65,7 @@ const els = {
   dateFrom: document.getElementById('dateFrom'),
   dateTo: document.getElementById('dateTo'),
   daysToFileFilter: document.getElementById('daysToFileFilter'),
+  errorFilter: document.getElementById('errorFilter'),
   sortSelect: document.getElementById('sortSelect'),
   clearFilters: document.getElementById('clearFilters'),
   body: document.getElementById('trBody'),
@@ -212,7 +213,14 @@ function applyFilters() {
   const fromVal = els.dateFrom.value ? new Date(els.dateFrom.value) : null;
   const toVal = els.dateTo.value ? new Date(els.dateTo.value) : null;
   const minDaysToFile = parseInt(els.daysToFileFilter.value, 10) || 0;
+  const errorsOnly = els.errorFilter.value === 'errors';
   const sortVal = els.sortSelect.value;
+
+  // A handful of search terms mean "show me the flagged filings" rather
+  // than literal text in the trade — same intent as the "Flagged errors
+  // only" dropdown, so typing one filters to _dateIssue trades too.
+  const ERROR_SEARCH_TERMS = ['error', 'errors', 'typo', 'flagged', 'flag'];
+  const searchMeansErrors = ERROR_SEARCH_TERMS.includes(q);
 
   filteredTrades = allTrades.filter(t => {
     if (stateVal && t._state !== stateVal) return false;
@@ -223,7 +231,9 @@ function applyFilters() {
     if (fromVal && t._date < fromVal) return false;
     if (toVal && t._date > toVal) return false;
     if (minDaysToFile && (t._daysToFile === null || t._daysToFile < minDaysToFile)) return false;
+    if (errorsOnly && !t._dateIssue) return false;
     if (!q) return true;
+    if (searchMeansErrors) return t._dateIssue;
     return (
       t.member.toLowerCase().includes(q) ||
       t.ticker.toLowerCase().includes(q) ||
@@ -292,6 +302,7 @@ function clearFilters() {
   els.dateFrom.value = '';
   els.dateTo.value = '';
   els.daysToFileFilter.value = '0';
+  els.errorFilter.value = '';
   els.sortSelect.value = 'date_desc';
   applyFilters();
 }
@@ -949,6 +960,7 @@ els.minAmountFilter.addEventListener('change', applyFilters);
 els.dateFrom.addEventListener('change', applyFilters);
 els.dateTo.addEventListener('change', applyFilters);
 els.daysToFileFilter.addEventListener('change', applyFilters);
+els.errorFilter.addEventListener('change', applyFilters);
 els.sortSelect.addEventListener('change', applyFilters);
 els.clearFilters.addEventListener('click', clearFilters);
 function goPrevPage() { if (currentPage > 1) { currentPage--; renderTable(); scrollToTable(); } }
