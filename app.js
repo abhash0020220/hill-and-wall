@@ -149,13 +149,24 @@ function loadData() {
           // auto-correct — verified against several real cases where the
           // "Digitally Signed" filed date matched the PDF exactly, so the
           // transaction date is the one that's wrong.
-          const _dateIssue = (_notifDate && _notifDate < _date) || (_filedDate && _filedDate < _date);
+          // Most of these are the notification date alone being impossible
+          // (often a garbled year, e.g. "03/28/1935") while the filed date
+          // and days-to-file look completely normal — so the reason has to
+          // name the specific field/value or the flag looks unexplained
+          // next to two dates that are visibly in the right order.
+          const _dateIssueReason =
+            (_notifDate && _notifDate < _date)
+              ? `notification date (${t.notification_date}) is before the transaction date`
+              : (_filedDate && _filedDate < _date)
+                ? `filed date (${t.filed_date}) is before the transaction date`
+                : null;
+          const _dateIssue = !!_dateIssueReason;
           const _state = t.state || (t.office || '').slice(0, 2);
           const _amountLow = amountLowerBound(t.amount || '');
           const _party = t.party || null;
           const _month = `${_date.getFullYear()}-${String(_date.getMonth() + 1).padStart(2, '0')}`;
           const _daysToFile = typeof t.days_to_file === 'number' ? t.days_to_file : null;
-          return { ...t, _date, _dateIssue, _state, _amountLow, _party, _month, _filedDate, _daysToFile };
+          return { ...t, _date, _dateIssue, _dateIssueReason, _state, _amountLow, _party, _month, _filedDate, _daysToFile };
         });
 
       populateStateFilter();
@@ -267,7 +278,7 @@ function renderTable() {
 
   els.body.innerHTML = pageItems.map(t => `
     <tr>
-      <td>${t.transaction_date}${t._dateIssue ? ` <span class="date-flag" title="This filing's notification/filed date is before its transaction date — almost certainly a typo in the original filing's transaction date, not this app.">⚠</span>` : ''}</td>
+      <td>${t.transaction_date}${t._dateIssue ? ` <span class="date-flag" title="Flagged: this filing's ${t._dateIssueReason} — physically impossible, almost certainly a typo in the original filing, not this app.">⚠</span>` : ''}</td>
       <td>${t.filed_date ? escapeHtml(t.filed_date) : '—'}${t._daysToFile !== null ? ` <span class="days-pill${t._daysToFile < 45 ? ' on-time' : ' late'}">${t._daysToFile}d</span>` : ''}</td>
       <td>${escapeHtml(t.member)}${t.member_url ? ` <a class="member-link" href="${t.member_url}" target="_blank" rel="noopener" title="Official congress.gov profile">↗</a>` : ''}</td>
       <td>${t._party ? `<span class="party-pill" style="background:${PARTY_COLORS[t._party]}22; color:${PARTY_COLORS[t._party]};">${escapeHtml(PARTY_NAMES[t._party] || t._party)}</span>` : '—'}</td>
