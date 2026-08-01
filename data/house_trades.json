@@ -143784,6 +143784,24 @@
     "days_to_file": 20
   },
   {
+    "member": "Cleo Fields",
+    "office": "LA06",
+    "ticker": "TSM",
+    "asset_description": "Taiwan Semiconductor Manufacturing Company Ltd.",
+    "asset_type": "ST",
+    "type": "Purchase",
+    "transaction_date": "07/10/2026",
+    "notification_date": "07/10/2026",
+    "filed_date": "07/30/2026",
+    "amount": "$1,001 - $15,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035023.pdf",
+    "chamber": "House",
+    "state": "LA",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/cleo-fields/F000110",
+    "days_to_file": 20
+  },
+  {
     "member": "Hon. Elizabeth Fletcher",
     "office": "TX07",
     "ticker": "GOOGL",
@@ -156238,6 +156256,24 @@
     "party": "D",
     "member_url": "https://www.congress.gov/member/kelly-morrison/M001234",
     "days_to_file": 2
+  },
+  {
+    "member": "Hon. Kelly Louise Morrison",
+    "office": "MN03",
+    "ticker": "HONAV",
+    "asset_description": "Honeywell Aerospace Inc. - Common Stock",
+    "asset_type": "ST",
+    "type": "Exchange",
+    "transaction_date": "06/29/2026",
+    "notification_date": "07/06/2026",
+    "filed_date": "07/30/2026",
+    "amount": "$15,001 - $50,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034972.pdf",
+    "chamber": "House",
+    "state": "MN",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/kelly-morrison/M001234",
+    "days_to_file": 31
   },
   {
     "member": "Hon. Jared Moskowitz",
