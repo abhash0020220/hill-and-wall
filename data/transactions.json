@@ -173790,6 +173790,24 @@
     "days_to_file": 20
   },
   {
+    "ticker": "LOW",
+    "asset_description": "Lowe's Companies, Inc. Common Stock",
+    "asset_type": "Stock",
+    "type": "Sale (Partial)",
+    "transaction_date": "07/20/2026",
+    "owner": "Self",
+    "amount": "$1,001 - $15,000",
+    "member": "Sheldon Whitehouse",
+    "office": "RI",
+    "state": "RI",
+    "party": "D",
+    "chamber": "Senate",
+    "ptr_link": "https://efdsearch.senate.gov/search/view/ptr/96db6e64-f7c3-4483-b0aa-af10ba2bdbbd/",
+    "member_url": "https://www.congress.gov/member/sheldon-whitehouse/W000802",
+    "filed_date": "08/03/2026",
+    "days_to_file": 14
+  },
+  {
     "ticker": "UHS",
     "asset_description": "Universal Health Services, Inc. Common Stock",
     "asset_type": "Stock",
