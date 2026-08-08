@@ -10134,6 +10134,24 @@
     "days_to_file": 20
   },
   {
+    "ticker": "O",
+    "asset_description": "Realty Income Corporation Common Stock",
+    "asset_type": "Stock",
+    "type": "Purchase",
+    "transaction_date": "07/23/2026",
+    "owner": "Self",
+    "amount": "$1,001 - $15,000",
+    "member": "Gary C. Peters",
+    "office": "MI",
+    "state": "MI",
+    "party": "D",
+    "chamber": "Senate",
+    "ptr_link": "https://efdsearch.senate.gov/search/view/ptr/328a9b36-1205-4117-bdc4-cd7c3ccbcbbc/",
+    "member_url": "https://www.congress.gov/member/gary-c-peters/P000595",
+    "filed_date": "08/07/2026",
+    "days_to_file": 15
+  },
+  {
     "ticker": "XLU",
     "asset_description": "SPDR Select Sector Fund - Utilities",
     "asset_type": "Stock",
