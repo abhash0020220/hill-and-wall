@@ -10134,6 +10134,24 @@
     "days_to_file": 20
   },
   {
+    "ticker": "RNWGX",
+    "asset_description": "NEW WORLD FUND INC - Class R-6",
+    "asset_type": "Stock",
+    "type": "Sale (Partial)",
+    "transaction_date": "11/20/2025",
+    "owner": "Joint",
+    "amount": "$1,001 - $15,000",
+    "member": "John Boozman",
+    "office": "AR",
+    "state": "AR",
+    "party": "R",
+    "chamber": "Senate",
+    "ptr_link": "https://efdsearch.senate.gov/search/view/ptr/51455bcd-4966-4e77-b481-09897ada81ae/",
+    "member_url": "https://www.congress.gov/member/john-boozman/B001236",
+    "filed_date": "08/24/2026",
+    "days_to_file": 277
+  },
+  {
     "ticker": "CBOE",
     "asset_description": "Cboe Global Markets, Inc. Common Stock",
     "asset_type": "Stock",
