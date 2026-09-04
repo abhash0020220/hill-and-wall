@@ -149652,6 +149652,24 @@
     "days_to_file": 30
   },
   {
+    "member": "Hon. Jonathan Jackson",
+    "office": "IL01",
+    "ticker": "VSAT",
+    "asset_description": "ViaSat, Inc. - Common Stock",
+    "asset_type": "ST",
+    "type": "Sale (Partial)",
+    "transaction_date": "08/28/2026",
+    "notification_date": "09/02/2026",
+    "filed_date": "09/03/2026",
+    "amount": "$1,001 - $15,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035370.pdf",
+    "chamber": "House",
+    "state": "IL",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/jonathan-l-jackson/J000309",
+    "days_to_file": 6
+  },
+  {
     "member": "Hon. Sara Jacobs",
     "office": "CA51",
     "ticker": "QCOM",
