@@ -144828,6 +144828,24 @@
     "days_to_file": 35
   },
   {
+    "member": "Hon. Lloyd Doggett",
+    "office": "TX37",
+    "ticker": "PG",
+    "asset_description": "Procter & Gamble Company",
+    "asset_type": "ST",
+    "type": "Purchase",
+    "transaction_date": "08/17/2026",
+    "notification_date": "09/08/2026",
+    "filed_date": "09/08/2026",
+    "amount": "$1,001 - $15,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035401.pdf",
+    "chamber": "House",
+    "state": "TX",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/lloyd-doggett/D000399",
+    "days_to_file": 22
+  },
+  {
     "member": "Hon. Byron Donalds",
     "office": "FL19",
     "ticker": "ABT",
