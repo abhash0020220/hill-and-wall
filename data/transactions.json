@@ -184302,6 +184302,24 @@
     "days_to_file": 20
   },
   {
+    "ticker": "WFC",
+    "asset_description": "Wells Fargo & Company Common Stock",
+    "asset_type": "Stock",
+    "type": "Purchase",
+    "transaction_date": "09/01/2026",
+    "owner": "Spouse",
+    "amount": "$15,001 - $50,000",
+    "member": "Mitch McConnell",
+    "office": "KY",
+    "state": "KY",
+    "party": "R",
+    "chamber": "Senate",
+    "ptr_link": "https://efdsearch.senate.gov/search/view/ptr/028aef33-dc0d-44a1-992f-aa35ee42685b/",
+    "member_url": "https://www.congress.gov/member/mitch-mcconnell/M000355",
+    "filed_date": "09/21/2026",
+    "days_to_file": 20
+  },
+  {
     "ticker": "WMB",
     "asset_description": "Williams Companies, Inc. (The) Common Stock",
     "asset_type": "Stock Option",
