@@ -161064,6 +161064,24 @@
     "days_to_file": 26
   },
   {
+    "member": "Hon. David Kustoff",
+    "office": "TN08",
+    "ticker": "WBD",
+    "asset_description": "Warner Bros. Discovery, Inc. - Series A Common Stock",
+    "asset_type": "ST",
+    "type": "Sale",
+    "transaction_date": "10/07/2026",
+    "notification_date": "10/12/2026",
+    "filed_date": "11/09/2026",
+    "amount": "$1,001 - $15,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20024921.pdf",
+    "chamber": "House",
+    "state": "TN",
+    "party": "R",
+    "member_url": "https://www.congress.gov/member/david-kustoff/K000392",
+    "days_to_file": 33
+  },
+  {
     "member": "Hon. Rick Larsen",
     "office": "WA02",
     "ticker": "DRI",
