@@ -192078,6 +192078,24 @@
     "days_to_file": 20
   },
   {
+    "ticker": "GS",
+    "asset_description": "Goldman Sachs Group, Inc. (The) Common Stock",
+    "asset_type": "Stock",
+    "type": "Sale (Partial)",
+    "transaction_date": "11/11/2026",
+    "owner": "Spouse",
+    "amount": "$250,001 - $500,000",
+    "member": "Ted Cruz",
+    "office": "TX",
+    "state": "TX",
+    "party": "R",
+    "chamber": "Senate",
+    "ptr_link": "https://efdsearch.senate.gov/search/view/ptr/f0f7eba0-ca09-4b80-a97b-64b6dafb835e/",
+    "member_url": "https://www.congress.gov/member/ted-cruz/C001098",
+    "filed_date": "11/20/2026",
+    "days_to_file": 9
+  },
+  {
     "ticker": "CMBS",
     "asset_description": "iShares CMBS ETF",
     "asset_type": "Stock",
