@@ -125064,6 +125064,24 @@
     "days_to_file": 5
   },
   {
+    "member": "Hon. Ed Case",
+    "office": "HI01",
+    "ticker": "AAPL",
+    "asset_description": "Apple Inc. - Common Stock",
+    "asset_type": "ST",
+    "type": "Purchase",
+    "transaction_date": "11/16/2026",
+    "notification_date": "11/21/2026",
+    "filed_date": "11/21/2026",
+    "amount": "$1,001 - $15,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036891.pdf",
+    "chamber": "House",
+    "state": "HI",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/ed-case/C001055",
+    "days_to_file": 5
+  },
+  {
     "member": "Hon. Gilbert Cisneros",
     "office": "CA31",
     "ticker": "ABT",
@@ -167614,6 +167632,24 @@
     "party": "D",
     "member_url": "https://www.congress.gov/member/jennifer-l-mcclellan/M001227",
     "days_to_file": 9
+  },
+  {
+    "member": "Hon. Jennifer McClellan",
+    "office": "VA04",
+    "ticker": "VZ",
+    "asset_description": "Verizon Communications Inc. Common Stock",
+    "asset_type": "ST",
+    "type": "Sale (Partial)",
+    "transaction_date": "11/19/2026",
+    "notification_date": "11/19/2026",
+    "filed_date": "11/20/2026",
+    "amount": "$50,001 - $100,000",
+    "ptr_link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036883.pdf",
+    "chamber": "House",
+    "state": "VA",
+    "party": "D",
+    "member_url": "https://www.congress.gov/member/jennifer-l-mcclellan/M001227",
+    "days_to_file": 1
   },
   {
     "member": "Hon. Richard Dean Dr McCormick",
